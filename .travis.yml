@@ -12,7 +12,13 @@ language:
 node_js:
   - '0.10'
 script:
-  # test usage example and then cleanup
-  - eval "$(curl -fLSs http://kaizhu256.github.io/node-install/node-install.sh)" && rm -r $HOME/bin
+  # test usage example
+  - eval "$(curl -fLSs http://kaizhu256.github.io/node-install/node-install.sh)"
+  # add $HOME/bin to $PATH
+  export PATH=$HOME/bin:$PATH
+  # test nodejs
+  node -e "console.log(process.version)"
+  # cleanup nodejs
+  rm -r $HOME/bin
   # install nodejs
   - /bin/sh ./node-install.sh
