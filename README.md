@@ -8,7 +8,7 @@ shell script to install nodejs on vanilla linux vm
 ## usage example
 ```
 # download and install nodejs to $HOME/bin
-eval "$(curl -fLSs https://raw.githubusercontent.com/kaizhu256/node-install/beta/node-install.sh)"
+eval "$(curl -fLSs http://kaizhu256.github.io/node-install/node-install.sh)"
 # add $HOME/bin to $PATH
 export PATH=$HOME/bin:$PATH
 # test nodejs
