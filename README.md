@@ -1,10 +1,7 @@
-node-install
+node-install [![travis.ci-org build status](https://api.travis-ci.org/kaizhu256/node-install.svg)](https://travis-ci.org/kaizhu256/node-install)
 ============
 shell script to install nodejs on vanilla linux vm
-
-
-
-## build status [![travis.ci-org build status](https://api.travis-ci.org/kaizhu256/node-install.svg)](https://travis-ci.org/kaizhu256/node-install)
+![screenshot](http://kaizhu256.github.io/node-install/screenshot.png)
 
 
 
