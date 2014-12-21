@@ -4,9 +4,7 @@ before_install:
   - "export DISPLAY=:99.0 && sh -e /etc/init.d/xvfb start"
 branches:
   only:
-  - alpha
-  - beta
-  - master
+  - gh-pages
 language:
   - c
 node_js:
@@ -15,10 +13,10 @@ script:
   # test usage example
   - eval "$(curl -fLSs http://kaizhu256.github.io/node-install/node-install.sh)"
   # add $HOME/bin to $PATH
-  export PATH=$HOME/bin:$PATH
+  - export PATH=$HOME/bin:$PATH
   # test nodejs
-  node -e "console.log(process.version)"
+  - node -e "console.log(process.version)"
   # cleanup nodejs
-  rm -r $HOME/bin
+  - rm -r $HOME/bin
   # install nodejs
   - /bin/sh ./node-install.sh
