@@ -1,7 +1,7 @@
 shNodeInstall() {
   # this function installs nodejs
   # if nodejs is already installed, then return
-  if [ $(node -e "console.log(process.version)") = "v0.10.34" ]
+  if [ "$(node -e 'console.log(process.version)')" = "v0.10.34" ]
   then
     return
   fi
@@ -20,7 +20,7 @@ shNodeInstall() {
   export PATH=$HOME/bin:$PATH
   # test nodejs
   printf 'testing nodejs ...\n'
-  if [ $(node -e "console.log(process.version)") = "v0.10.34" ]
+  if [ "$(node -e 'console.log(process.version)')" = "v0.10.34" ]
   then
     printf 'test passed\n'
   else
