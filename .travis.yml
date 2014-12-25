@@ -7,8 +7,6 @@ branches:
   - gh-pages
 language:
   - c
-node_js:
-  - '0.10'
 script:
   # test usage example
   - eval "$(curl -fLSs http://kaizhu256.github.io/node-install/node-install.sh)"
